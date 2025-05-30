@@ -1,7 +1,7 @@
 import telebot
-import token
+import my_token
 
-bot = telebot.TeleBot(token.API_TOKEN)
+bot = telebot.TeleBot(my_token.API_TOKEN)
 
 
 # Очереди в чатах
