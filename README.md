@@ -8,7 +8,7 @@ telegram bot for creating queue in chats
 Для начала использования нужно:
   * создать бота в @BotFather
   * Получить и скопировать API ключ (Пример: `7249784233:AAEрiGlfnL0iUYPO4x5BboxFIPurciOaQ-A`)
-  * вставить API ключ в файл token.py
+  * вставить API ключ в файл [token.py](https://github.com/Kostyan26/queueBot/blob/main/token.py)
   * установить необходимые модули ([requirements.txt](https://github.com/Kostyan26/queueBot/blob/main/requirements.txt))
 
 
