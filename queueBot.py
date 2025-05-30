@@ -83,6 +83,17 @@ def handle_next(message):
     else:
         bot.send_message(chat_id, "Очередь пуста.")
 
+# Текущий первый в очереди
+@bot.message_handler(commands=['current'])
+def handle_next(message):
+    chat_id = message.chat.id
+    queue = get_queue(chat_id)
+
+    if queue:
+        bot.send_message(chat_id, f"Первый в очереди: {queue[0]['username']}")
+    else:
+        bot.send_message(chat_id, "Очередь пуста.")
+
 # Очистить очередь (только владелец чата(например: Антон Андреевич))
 @bot.message_handler(commands=['clear'])
 def handle_reset(message):
